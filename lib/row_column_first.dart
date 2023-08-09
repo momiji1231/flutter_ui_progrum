@@ -7,13 +7,41 @@ class RowColumnFirst extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-            border: Border.all(),
-          ),
-          padding: const EdgeInsets.all(20.0),
-          child: const Text('Flutterに興味を持ってくれてありがとう！'),
+      body: Container(
+        height: 300.0,
+        alignment: Alignment.bottomCenter,
+        child: const Column(
+          children: [
+            Icon(
+              Icons.star,
+              color: Colors.red,
+            ),
+            Text('Are You Ready ?'),
+            Icon(
+              Icons.face,
+              color: Colors.red,
+            ),
+            SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Text('Row'), SizedBox(width: 10), Text('Widget')],
+            ),
+            SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.star,
+                  color: Colors.red,
+                ),
+                Text('Are You Ready ?'),
+                Icon(
+                  Icons.face,
+                  color: Colors.red,
+                )
+              ],
+            )
+          ],
         ),
       ),
     );

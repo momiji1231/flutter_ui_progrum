@@ -9,7 +9,7 @@ class TextExample extends StatelessWidget {
         appBar: AppBar(),
         body: Container(
             alignment: Alignment.center,
-            child: Text('Hello World',
+            child: const Text('Hello World',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24))));
   }
 }

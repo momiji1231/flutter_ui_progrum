@@ -3,6 +3,10 @@ import 'text_example.dart';
 import 'picture_display.dart';
 import 'box_display.dart';
 import 'row_column_first.dart';
+import 'youtubish_ui.dart';
+import 'youtubish_ui2.dart';
+import 'cake_introduction.dart';
+import 'cook_pad_Introduction.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +38,22 @@ class MyApp extends StatelessWidget {
           _GalleryItem(
             title: 'No.4 RowとColumn、基本のき',
             builder: (context) => const RowColumnFirst(),
+          ),
+          _GalleryItem(
+            title: 'No.5 Columnの基本をYouTubeっぽいUIで学ぶ',
+            builder: (context) => const YoutubishUi(),
+          ),
+          _GalleryItem(
+            title: 'No.6 YouTubeでよく見るUI その２',
+            builder: (context) => const YoutubishUi2(),
+          ),
+          _GalleryItem(
+            title: 'No.7 ケーキ屋さんの商品紹介',
+            builder: (context) => const CakeIntroduction(),
+          ),
+          _GalleryItem(
+            title: 'No.8 CookPad っぽいUI',
+            builder: (context) => const CookPadIntroduction(),
           ),
         ]),
       ),
