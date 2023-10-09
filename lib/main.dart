@@ -2,12 +2,19 @@ import 'package:flutter/material.dart';
 
 import 'box_display.dart';
 import 'cake_introduction.dart';
-import 'cook_pad_introduction.dart';
 import 'picture_display.dart';
 import 'row_column_first.dart';
+import 'single_child_scrollview.dart';
+import 'stack_image.dart';
 import 'text_example.dart';
 import 'youtubish_ui.dart';
 import 'youtubish_ui2.dart';
+import 'cook_pad_Introduction.dart';
+import 'single_child_scrolled_header.dart';
+import 'listview_sample.dart';
+import 'gridview_sample.dart';
+import 'tabview_sample.dart';
+import 'appbar_customize.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,6 +62,34 @@ class MyApp extends StatelessWidget {
           _GalleryItem(
             title: 'No.8 CookPad っぽいUI',
             builder: (context) => const CookPadIntroduction(),
+          ),
+          _GalleryItem(
+            title: 'No.10 StackImage',
+            builder: (context) => const StackImage(),
+          ),
+          _GalleryItem(
+            title: 'No.11 SingleChildScrollView のサンプル',
+            builder: (context) => const SingleChildScrolled(),
+          ),
+          _GalleryItem(
+            title: 'No.12 SingleChildScrollViewの固定ヘッダーとフッター',
+            builder: (context) => const SingleChildScrolledHeader(),
+          ),
+          _GalleryItem(
+            title: 'No.14 ListViewのサンプル',
+            builder: (context) => const ListViewSample(),
+          ),
+          _GalleryItem(
+            title: 'No.14 GridViewのサンプル',
+            builder: (context) => const GridViewSample(),
+          ),
+          _GalleryItem(
+            title: 'No.16 TabViewのサンプル',
+            builder: (context) => const TabViewSample(),
+          ),
+          _GalleryItem(
+            title: 'No.17 AppBarカスタマイズ サンプル',
+            builder: (context) => const AppBarCustomizeSample(),
           ),
         ]),
       ),
